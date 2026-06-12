@@ -1,422 +1,469 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stackly-Agri-Site🌿 </title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Stackly Agriculture — Premium sustainable farming solutions, crop management, and agri-tech services." />
+  <title>Stackly Agriculture — Growing the Future</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="animations.css" />
 </head>
-
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="logo">
-            <img src="images/logo.png" alt="Logo" class="logo-img" onerror="this.style.display='none'">
-            <h1>🌿 Stackly GreenHarvest</h1>
+<!-- PAGE LOADER -->
+<div class="page-loader" id="page-loader">
+  <div class="loader-logo">Stack<span>ly</span></div>
+  <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+</div>
+
+<!-- SCROLL PROGRESS -->
+<div id="scroll-progress"></div>
+
+<!-- BACK TO TOP -->
+<button id="back-to-top" aria-label="Back to top">↑</button>
+
+<!-- ============ NAVBAR ============ -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon">🌿</div>
+      <div class="logo-text">Stack<span>ly</span></div>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+    </ul>
+
+    <div class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobile-nav">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="blog.html">Blog</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- ============ SECTION 1: HERO ============ -->
+<section class="hero" id="home">
+  <video class="hero-video-bg" autoplay muted loop playsinline preload="none" poster="images/hero-poster.jpg">
+    <source src="videos/hero-video.mp4" type="video/mp4" />
+  </video>
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <div class="hero-tag">🌾 Sustainable Agriculture Since 2008</div>
+    <h1 class="hero-title">
+      Growing <span class="highlight gradient-text">Tomorrow's</span><br />
+      Food Today
+    </h1>
+    <p class="hero-subtitle">
+      Stackly Agriculture delivers precision farming solutions, sustainable crop management, and cutting-edge agri-tech to help farmers produce more with less.
+    </p>
+    <div class="hero-actions">
+      <a href="services.html" class="btn-primary"><span>Explore Services →</span></a>
+      <a href="about.html" class="btn-outline">Our Story</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <div class="stat-number"><span data-count="1200">0</span><span>+</span></div>
+        <div class="stat-label">Farms Served</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number"><span data-count="48">0</span><span>+</span></div>
+        <div class="stat-label">Districts Covered</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number"><span data-count="15">0</span><span>K+ Acres</span></div>
+        <div class="stat-label">Under Management</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    <span class="scroll-text">Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ============ SECTION 2: ABOUT PREVIEW ============ -->
+<section class="about-preview">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-image-wrap reveal-left">
+        <img src="images/about-farm.jpg" alt="Stackly farm operations" class="about-img-main" loading="lazy" />
+        <div class="about-badge float-anim">
+          <strong>15+</strong>
+          <span>Years of Excellence</span>
         </div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#crops">Our Crops</a></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="#contact">Contact</a></li>
+      </div>
+      <div class="about-text reveal-right">
+        <span class="section-label">Who We Are</span>
+        <h2>Pioneering the Future of<br /><span class="text-green">Sustainable Farming</span></h2>
+        <div class="section-divider"></div>
+        <p style="margin-top:1.5rem;">
+          At Stackly Agriculture, we combine traditional farming wisdom with modern technology to deliver exceptional yield, sustainability, and food security across India and beyond.
+        </p>
+        <p style="margin-top:1rem;">
+          From soil analysis to harvest automation, our end-to-end solutions empower smallholder farmers and large agribusinesses alike to thrive in a changing climate.
+        </p>
+        <div class="features-list">
+          <div class="feature-item">Precision Irrigation</div>
+          <div class="feature-item">Organic Certification</div>
+          <div class="feature-item">Drone Monitoring</div>
+          <div class="feature-item">Market Linkages</div>
+          <div class="feature-item">Soil Health Mapping</div>
+          <div class="feature-item">Crop Insurance</div>
+        </div>
+        <a href="about.html" class="btn-primary" style="margin-top:0.5rem;"><span>Learn More →</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SECTION 3: SERVICES PREVIEW ============ -->
+<section class="services-section">
+  <div class="container">
+    <div class="section-header center reveal">
+      <span class="section-label">What We Do</span>
+      <h2>Our Core <span class="text-green">Services</span></h2>
+      <div class="section-divider center"></div>
+      <p>From crop consultancy to agri-drone operations, Stackly offers comprehensive agricultural services tailored to your land and goals.</p>
+    </div>
+    <div class="services-grid stagger-children">
+      <div class="service-card reveal">
+        <div class="service-icon">🌱</div>
+        <h3>Crop Management</h3>
+        <p>Expert crop planning, variety selection, and field management for maximum yield and minimum waste across all seasons.</p>
+        <a href="services.html" class="service-link">Learn more →</a>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">💧</div>
+        <h3>Smart Irrigation</h3>
+        <p>IoT-powered drip and sprinkler systems with real-time soil moisture monitoring to cut water usage by up to 40%.</p>
+        <a href="services.html" class="service-link">Learn more →</a>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">🚁</div>
+        <h3>Drone Services</h3>
+        <p>Aerial crop scouting, precision pesticide spraying, and multispectral imaging to detect crop stress early.</p>
+        <a href="services.html" class="service-link">Learn more →</a>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">🧪</div>
+        <h3>Soil Analysis</h3>
+        <p>Comprehensive soil health testing with customised fertilizer plans for improved crop nutrition and land longevity.</p>
+        <a href="services.html" class="service-link">Learn more →</a>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top:3rem;" class="reveal">
+      <a href="services.html" class="btn-outline">View All Services</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SECTION 4: PRODUCTS / CROPS ============ -->
+<section class="products-section">
+  <div class="container">
+    <div class="section-header center reveal">
+      <span class="section-label">Our Produce</span>
+      <h2>Premium <span class="text-green">Crops & Products</span></h2>
+      <div class="section-divider center"></div>
+      <p>We cultivate and supply certified organic produce — farm fresh, nutritious, and traceable from field to table.</p>
+    </div>
+    <div class="products-grid stagger-children">
+      <div class="product-card reveal">
+        <div class="product-img-wrap">
+          <img src="images/product-wheat.jpg" alt="Wheat" loading="lazy" />
+          <span class="product-tag">Staple Grain</span>
+        </div>
+        <div class="product-info">
+          <h3>Premium Wheat</h3>
+          <p>High-protein varieties grown under precision farming for superior flour quality and nutritional value.</p>
+        </div>
+      </div>
+      <div class="product-card reveal">
+        <div class="product-img-wrap">
+          <img src="images/product-rice.jpg" alt="Rice" loading="lazy" />
+          <span class="product-tag">Organic</span>
+        </div>
+        <div class="product-info">
+          <h3>Basmati Rice</h3>
+          <p>Long-grain aromatic basmati cultivated with traditional methods and modern soil care.</p>
+        </div>
+      </div>
+      <div class="product-card reveal">
+        <div class="product-img-wrap">
+          <img src="images/product-vegetable.jpg" alt="Vegetables" loading="lazy" />
+          <span class="product-tag">Seasonal</span>
+        </div>
+        <div class="product-info">
+          <h3>Fresh Vegetables</h3>
+          <p>Pesticide-free seasonal vegetables harvested at peak ripeness for maximum flavour and nutrition.</p>
+        </div>
+      </div>
+      <div class="product-card reveal">
+        <div class="product-img-wrap">
+          <img src="images/product-fruits.jpg" alt="Fruits" loading="lazy" />
+          <span class="product-tag">Export Grade</span>
+        </div>
+        <div class="product-info">
+          <h3>Tropical Fruits</h3>
+          <p>Export-quality mangoes, bananas, and citrus grown in mineral-rich soil with drip irrigation.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SECTION 5: STATS ============ -->
+<section class="stats-section">
+  <div class="container">
+    <div class="stats-grid stagger-children">
+      <div class="stat-box reveal">
+        <div class="stat-number"><span data-count="1200">0</span>+</div>
+        <div class="stat-label">Farms Empowered</div>
+      </div>
+      <div class="stat-box reveal">
+        <div class="stat-number"><span data-count="98">0</span>%</div>
+        <div class="stat-label">Client Satisfaction</div>
+      </div>
+      <div class="stat-box reveal">
+        <div class="stat-number"><span data-count="40">0</span>%</div>
+        <div class="stat-label">Water Saved on Average</div>
+      </div>
+      <div class="stat-box reveal">
+        <div class="stat-number"><span data-count="15">0</span>+</div>
+        <div class="stat-label">Years of Excellence</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SECTION 6: GALLERY ============ -->
+<section class="gallery-section">
+  <div class="container">
+    <div class="section-header center reveal">
+      <span class="section-label">Field Gallery</span>
+      <h2>Scenes from <span class="text-green">Our Farms</span></h2>
+      <div class="section-divider center"></div>
+    </div>
+    <div class="gallery-grid reveal-scale">
+      <div class="gallery-item">
+        <img src="images/gallery-1.jpg" alt="Farm landscape" loading="lazy" />
+        <div class="gallery-overlay"><span>Paddy Fields, Tamil Nadu</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/gallery-2.jpg" alt="Irrigation" loading="lazy" />
+        <div class="gallery-overlay"><span>Drip Irrigation System</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/gallery-3.jpg" alt="Harvest" loading="lazy" />
+        <div class="gallery-overlay"><span>Wheat Harvest Season</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/gallery-4.jpg" alt="Drone" loading="lazy" />
+        <div class="gallery-overlay"><span>Drone Field Monitoring</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/gallery-1.jpg" alt="Crop rows" loading="lazy" />
+        <div class="gallery-overlay"><span>Vegetable Rows</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SECTION 7: TESTIMONIALS ============ -->
+<section class="testimonials-section">
+  <div class="container">
+    <div class="section-header center reveal">
+      <span class="section-label">Success Stories</span>
+      <h2>Farmers <span class="text-green">Trust Us</span></h2>
+      <div class="section-divider center"></div>
+      <p>Real stories from real farmers whose livelihoods we've helped transform.</p>
+    </div>
+    <div class="testimonials-grid stagger-children">
+      <div class="testimonial-card reveal">
+        <span class="quote-mark">"</span>
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">Stackly's drip irrigation system cut our water bill by nearly half while our tomato yield went up by 35%. The team was professional and the installation was seamless.</p>
+        <div class="testimonial-author">
+          <img src="images/testimonial-1.jpg" alt="Rajan Kumar" class="author-avatar" loading="lazy" />
+          <div>
+            <div class="author-name">Rajan Kumar</div>
+            <div class="author-role">Farmer, Coimbatore</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal">
+        <span class="quote-mark">"</span>
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">The soil analysis report was eye-opening. With the customised fertilizer schedule, our paddy crop quality improved dramatically. Best agricultural consultancy we've used.</p>
+        <div class="testimonial-author">
+          <img src="images/testimonial-2.jpg" alt="Meena Selvam" class="author-avatar" loading="lazy" />
+          <div>
+            <div class="author-name">Meena Selvam</div>
+            <div class="author-role">Organic Farmer, Thanjavur</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal">
+        <span class="quote-mark">"</span>
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">The drone scouting identified a fungal outbreak 10 days before it would've destroyed our crop. Stackly's fast intervention saved us lakhs. Truly indispensable service.</p>
+        <div class="testimonial-author">
+          <img src="images/testimonial-3.jpg" alt="Arjun Patel" class="author-avatar" loading="lazy" />
+          <div>
+            <div class="author-name">Arjun Patel</div>
+            <div class="author-role">Commercial Farmer, Salem</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SECTION 8: BLOG PREVIEW ============ -->
+<section class="blog-preview">
+  <div class="container">
+    <div class="section-header" style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:1rem;" class="reveal">
+      <div class="reveal">
+        <span class="section-label">Agri Insights</span>
+        <h2>Latest from <span class="text-green">Our Blog</span></h2>
+        <div class="section-divider"></div>
+      </div>
+      <a href="blog.html" class="btn-outline reveal">View All Posts</a>
+    </div>
+    <div class="blog-grid stagger-children">
+      <div class="blog-card reveal">
+        <div class="blog-img-wrap">
+          <img src="images/blog1.jpg" alt="Precision farming" loading="lazy" />
+          <span class="blog-cat">Technology</span>
+        </div>
+        <div class="blog-content">
+          <div class="blog-meta">
+            <span>📅 May 12, 2025</span>
+            <span>⏱ 5 min read</span>
+          </div>
+          <h3>How Precision Farming is Reshaping Indian Agriculture</h3>
+          <p>Discover how data-driven farming techniques are helping Indian farmers increase yield by up to 60% while reducing input costs.</p>
+          <a href="blog.html" class="blog-read-more">Read Article →</a>
+        </div>
+      </div>
+      <div class="blog-card reveal">
+        <div class="blog-img-wrap">
+          <img src="images/blog-2.jpg" alt="Drone farming" loading="lazy" />
+          <span class="blog-cat">Drones</span>
+        </div>
+        <div class="blog-content">
+          <div class="blog-meta">
+            <span>📅 Apr 28, 2025</span>
+            <span>⏱ 4 min read</span>
+          </div>
+          <h3>Agri-Drones: The Eyes Above Your Fields</h3>
+          <p>How multispectral drone imaging helps detect crop diseases, nutrient deficiencies, and water stress weeks before visible symptoms.</p>
+          <a href="blog.html" class="blog-read-more">Read Article →</a>
+        </div>
+      </div>
+      <div class="blog-card reveal">
+        <div class="blog-img-wrap">
+          <img src="images/blog-3.jpg" alt="Organic farming" loading="lazy" />
+          <span class="blog-cat">Organic</span>
+        </div>
+        <div class="blog-content">
+          <div class="blog-meta">
+            <span>📅 Apr 10, 2025</span>
+            <span>⏱ 6 min read</span>
+          </div>
+          <h3>Going Organic: A Step-by-Step Transition Guide</h3>
+          <p>Thinking of switching to organic farming? Here's a practical, season-by-season roadmap with real cost and profit benchmarks.</p>
+          <a href="blog.html" class="blog-read-more">Read Article →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA SECTION ============ -->
+<section class="cta-section">
+  <div class="cta-bg-pattern"></div>
+  <div class="container">
+    <div class="cta-content reveal">
+      <span class="section-label" style="justify-content:center;">Ready to Grow?</span>
+      <h2>Transform Your Farm with<br /><span class="text-green">Expert Guidance</span></h2>
+      <p>Join over 1,200 farmers who trust Stackly Agriculture for sustainable, profitable, and future-ready farming.</p>
+      <div class="cta-buttons">
+        <a href="contact.html" class="btn-primary"><span>Get a Free Consultation →</span></a>
+        <a href="services.html" class="btn-outline">Our Services</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <div class="logo-icon">🌿</div>
+          <div class="logo-text">Stack<span>ly</span></div>
+        </a>
+        <p>Empowering farmers with sustainable technology, precision farming, and agri-expertise since 2008.</p>
+        <div class="footer-social">
+          <a href="#" class="social-link" aria-label="Facebook">f</a>
+          <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+          <a href="#" class="social-link" aria-label="Instagram">in</a>
+          <a href="#" class="social-link" aria-label="YouTube">▶</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
-        <button class="btn-contact">Get In Touch</button>
-        <div class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <img src="images/hero-bg.jpg" alt="Farm" class="hero-bg">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <span class="hero-badge">🌱 Trusted Since 1995</span>
-            <h1>Growing <span>Naturally,</span><br>Harvesting <span>Sustainably</span></h1>
-            <p>We are committed to delivering premium quality agricultural products through sustainable farming
-                practices. From seed to harvest, we nurture every crop with care and expertise.</p>
-            <div class="hero-buttons">
-                <button class="btn-primary">Explore Our Farm</button>
-                <button class="btn-secondary">Learn More</button>
-            </div>
-            <div class="hero-stats">
-                <div class="hero-stat">
-                    <h3>25+</h3>
-                    <p>Years Experience</p>
-                </div>
-                <div class="hero-stat">
-                    <h3>500+</h3>
-                    <p>Acres of Farmland</p>
-                </div>
-                <div class="hero-stat">
-                    <h3>50+</h3>
-                    <p>Crop Varieties</p>
-                </div>
-                <div class="hero-stat">
-                    <h3>1000+</h3>
-                    <p>Happy Clients</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="about-container">
-            <div class="about-image">
-                <img src="images/about.jpg" alt="About Us">
-                <div class="about-badge">
-                    <h3>25+</h3>
-                    <p>Years of Excellence</p>
-                </div>
-            </div>
-            <div class="about-content">
-                <span class="section-badge">About Us</span>
-                <h2>Pioneers in Sustainable Agriculture</h2>
-                <p>Stackly GreenHarvest Agriculture has been at the forefront of sustainable farming for over two decades. We
-                    combine traditional wisdom with modern technology to deliver the highest quality agricultural
-                    products to markets worldwide.</p>
-                <p>Our mission is to feed the world while preserving the environment. We practice responsible farming
-                    techniques that protect soil health, conserve water, and promote biodiversity across all our
-                    farmlands.</p>
-                <div class="about-features">
-                    <div class="feature">
-                        <span>✅</span>
-                        <p>100% Organic Certified</p>
-                    </div>
-                    <div class="feature">
-                        <span>✅</span>
-                        <p>Sustainable Farming Practices</p>
-                    </div>
-                    <div class="feature">
-                        <span>✅</span>
-                        <p>Advanced Irrigation Systems</p>
-                    </div>
-                    <div class="feature">
-                        <span>✅</span>
-                        <p>ISO 9001:2015 Certified</p>
-                    </div>
-                </div>
-                <button class="btn-primary">Read Our Story</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section class="services" id="services">
-        <div class="section-header">
-            <span class="section-badge">What We Offer</span>
-            <h2>Our Agricultural Services</h2>
-            <p>We provide comprehensive farming solutions from irrigation to harvesting, ensuring maximum yield and
-                quality at every stage.</p>
-        </div>
-        <div class="services-grid">
-            <div class="service-card">
-                <div class="service-img">
-                    <img src="images/service1.jpg" alt="Irrigation">
-                </div>
-                <div class="service-content">
-                    <span class="service-icon">💧</span>
-                    <h3>Smart Irrigation</h3>
-                    <p>Advanced drip and sprinkler irrigation systems that conserve water while maximizing crop growth
-                        and yield throughout the season.</p>
-                    <a href="#" class="service-link">Learn More →</a>
-                </div>
-            </div>
-            <div class="service-card">
-                <div class="service-img">
-                    <img src="images/service2.jpg" alt="Mechanization">
-                </div>
-                <div class="service-content">
-                    <span class="service-icon">🚜</span>
-                    <h3>Farm Mechanization</h3>
-                    <p>Modern tractors and agricultural machinery for efficient land preparation, planting, and
-                        harvesting operations at scale.</p>
-                    <a href="#" class="service-link">Learn More →</a>
-                </div>
-            </div>
-            <div class="service-card">
-                <div class="service-img">
-                    <img src="images/service3.jpg" alt="Greenhouse">
-                </div>
-                <div class="service-content">
-                    <span class="service-icon">🏡</span>
-                    <h3>Greenhouse Farming</h3>
-                    <p>State-of-the-art greenhouse facilities for year-round cultivation of premium vegetables, fruits,
-                        and specialty crops.</p>
-                    <a href="#" class="service-link">Learn More →</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Crops Section -->
-    <section class="crops" id="crops">
-        <div class="section-header">
-            <span class="section-badge">What We Grow</span>
-            <h2>Our Premium Crops</h2>
-            <p>From staple grains to fresh vegetables, we cultivate a diverse range of crops using sustainable methods
-                for maximum nutritional value.</p>
-        </div>
-        <div class="crops-grid">
-            <div class="crop-card">
-                <div class="crop-img">
-                    <img src="images/crop1.jpg" alt="Vegetables">
-                    <span class="crop-tag">Fresh Produce</span>
-                </div>
-                <div class="crop-content">
-                    <h3>Fresh Vegetables</h3>
-                    <p>Organically grown bell peppers, tomatoes, and a wide variety of seasonal vegetables harvested at
-                        peak freshness.</p>
-                    <div class="crop-meta">
-                        <span>🌱 Organic</span>
-                        <span>📦 Bulk Available</span>
-                    </div>
-                </div>
-            </div>
-            <div class="crop-card">
-                <div class="crop-img">
-                    <img src="images/crop2.jpg" alt="Rice">
-                    <span class="crop-tag">Staple Grain</span>
-                </div>
-                <div class="crop-content">
-                    <h3>Premium Rice</h3>
-                    <p>High-yield paddy rice cultivated in fertile wetlands using traditional and modern sustainable
-                        farming methods.</p>
-                    <div class="crop-meta">
-                        <span>🌾 Non-GMO</span>
-                        <span>📦 Export Quality</span>
-                    </div>
-                </div>
-            </div>
-            <div class="crop-card">
-                <div class="crop-img">
-                    <img src="images/crop3.jpg" alt="Wheat">
-                    <span class="crop-tag">Cereal Crop</span>
-                </div>
-                <div class="crop-content">
-                    <h3>Golden Wheat</h3>
-                    <p>Premium quality wheat grown in mineral-rich soil, perfect for flour milling, baking, and food
-                        processing industries.</p>
-                    <div class="crop-meta">
-                        <span>🌾 High Protein</span>
-                        <span>📦 Mill Grade</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Team Section -->
-    <section class="team" id="team">
-        <div class="section-header">
-            <span class="section-badge">Our People</span>
-            <h2>Meet Our Expert Team</h2>
-            <p>Our dedicated team of agricultural experts, agronomists, and farming professionals work tirelessly to
-                ensure the best harvest every season.</p>
-        </div>
-        <div class="team-grid">
-            <div class="team-card">
-                <div class="team-img">
-                    <img src="images/team1.jpg" alt="Team Member">
-                </div>
-                <div class="team-content">
-                    <h3>Robert Anderson</h3>
-                    <span>Founder & CEO</span>
-                    <p>30+ years of agricultural experience. Pioneer in sustainable farming practices and organic
-                        certification.</p>
-                </div>
-            </div>
-            <div class="team-card">
-                <div class="team-img">
-                    <img src="images/team2.jpg" alt="Team Member">
-                </div>
-                <div class="team-content">
-                    <h3>Sarah & James</h3>
-                    <span>Lead Agronomists</span>
-                    <p>Expert plant scientists specializing in crop health, soil management, and greenhouse cultivation
-                        techniques.</p>
-                </div>
-            </div>
-            <div class="team-card">
-                <div class="team-img">
-                    <img src="images/team3.jpg" alt="Team Member">
-                </div>
-                <div class="team-content">
-                    <h3>Farm Operations</h3>
-                    <span>Field Experts</span>
-                    <p>Experienced field workers and operators ensuring every crop receives the care and attention it
-                        deserves.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="testimonials">
-        <div class="section-header">
-            <span class="section-badge">What Clients Say</span>
-            <h2>Trusted by Farmers & Businesses</h2>
-        </div>
-        <div class="testimonials-grid">
-            <div class="testimonial-card">
-                <p>"Stackly GreenHarvest has transformed the way we source our agricultural products. The quality is
-                    consistently excellent and delivery is always on time."</p>
-                <div class="testimonial-author">
-                    <div class="author-avatar">JM</div>
-                    <div>
-                        <h4>John Mitchell</h4>
-                        <span>Food Processing Company</span>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial-card">
-                <p>"Their sustainable farming practices and organic certification give us confidence that we are
-                    providing the best quality produce to our customers."</p>
-                <div class="testimonial-author">
-                    <div class="author-avatar">PK</div>
-                    <div>
-                        <h4>Priya Kumar</h4>
-                        <span>Organic Retail Chain</span>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial-card">
-                <p>"Working with Stackly GreenHarvest has been a game changer for our export business. Their wheat and rice
-                    quality meets international standards perfectly."</p>
-                <div class="testimonial-author">
-                    <div class="author-avatar">DL</div>
-                    <div>
-                        <h4>David Lee</h4>
-                        <span>Export Trading Company</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="section-header">
-            <span class="section-badge">Get In Touch</span>
-            <h2>Contact Us</h2>
-            <p>Have questions about our products or services? We would love to hear from you.</p>
-        </div>
-        <div class="contact-container">
-            <div class="contact-info">
-                <div class="contact-item">
-                    <span class="contact-icon">📍</span>
-                    <div>
-                        <h4>Our Location</h4>
-                        <p>123 Farm Road, Green Valley,<br>Chennai, India</p>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <span class="contact-icon">📞</span>
-                    <div>
-                        <h4>Phone Number</h4>
-                        <p>+91 98765 43210<br>+91 87654 32109</p>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <span class="contact-icon">📧</span>
-                    <div>
-                        <h4>Email Address</h4>
-                        <p>info@stacklygreenharvestagri.com<br>sales@stacklygreenharvestagri.com</p>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <span class="contact-icon">🕒</span>
-                    <div>
-                        <h4>Working Hours</h4>
-                        <p>Monday - Saturday: 10AM - 6PM<br>Sunday: Holiday</p>
-                    </div>
-                </div>
-            </div>
-            <form class="contact-form">
-                <div class="form-group">
-                    <input type="text" placeholder="Your Full Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" placeholder="Your Email Address" required>
-                </div>
-                <div class="form-group">
-                    <input type="tel" placeholder="Your Phone Number">
-                </div>
-                <div class="form-group">
-                    <select>
-                        <option value="">Select Service</option>
-                        <option>Smart Irrigation</option>
-                        <option>Farm Mechanization</option>
-                        <option>Greenhouse Farming</option>
-                        <option>Crop Purchase</option>
-                        <option>Other</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <textarea placeholder="Your Message" rows="5"></textarea>
-                </div>
-                <button type="submit" class="btn-primary">Send Message</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-brand">
-                <h2>🌿 Stackly GreenHarvest Agriculture</h2>
-                <p>Committed to sustainable farming and delivering premium quality agricultural products to markets
-                    worldwide since 1995.</p>
-                <div class="social-links">
-                    <a href="#">Facebook</a>
-                    <a href="#">Instagram</a>
-                    <a href="#">Twitter</a>
-                    <a href="#">LinkedIn</a>
-                </div>
-            </div>
-            <div class="footer-links">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#crops">Our Crops</a></li>
-                    <li><a href="#team">Our Team</a></li>
-                </ul>
-            </div>
-            <div class="footer-links">
-                <h4>Our Products</h4>
-                <ul>
-                    <li><a href="#">Fresh Vegetables</a></li>
-                    <li><a href="#">Premium Rice</a></li>
-                    <li><a href="#">Golden Wheat</a></li>
-                    <li><a href="#">Organic Produce</a></li>
-                    <li><a href="#">Export Grade</a></li>
-                </ul>
-            </div>
-            <div class="footer-newsletter">
-                <h4>Newsletter</h4>
-                <p>Subscribe to receive updates on our latest harvest, seasonal products, and farming news.</p>
-                <div class="newsletter-input">
-                    <input type="email" placeholder="Enter your email">
-                    <button>Subscribe</button>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>© 2025 Stackly GreenHarvest Agriculture. All Rights Reserved. | Designed with 🌿 for a Greener World</p>
-        </div>
-    </footer>
-
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">Crop Management</a></li>
+          <li><a href="services.html">Smart Irrigation</a></li>
+          <li><a href="services.html">Drone Services</a></li>
+          <li><a href="services.html">Soil Analysis</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:info@stackly.in">info@stackly.in</a></li>
+          <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+          <li><a href="#">Chennai, Tamil Nadu</a></li>
+          <li><a href="#">Mon–Sat, 9AM–6PM</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Stackly Agriculture. All rights reserved.</p>
+      <p>Designed with 🌱 for Indian Farmers</p>
+    </div>
+  </div>
+</footer>
 
 <script src="script.js"></script>
 </body>
-
 </html>

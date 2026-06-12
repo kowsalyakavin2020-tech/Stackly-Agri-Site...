@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Stackly Agriculture Services — Crop management, smart irrigation, drone services and soil analysis." />
+  <title>Services — Stackly Agriculture</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="animations.css" />
+</head>
+<body>
+
+<div class="page-loader" id="page-loader">
+  <div class="loader-logo">Stack<span>ly</span></div>
+  <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+</div>
+<div id="scroll-progress"></div>
+<button id="back-to-top" aria-label="Back to top">↑</button>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon">🌿</div>
+      <div class="logo-text">Stack<span>ly</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html" class="active">Services</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+<div class="mobile-nav" id="mobile-nav">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html" class="active">Services</a>
+  <a href="blog.html">Blog</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- ============ SECTION 1: PAGE HERO ============ -->
+<section class="page-hero">
+  <div class="page-hero-content">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a><span>/</span><span>Services</span>
+    </div>
+    <span class="section-label">What We Offer</span>
+    <h1 style="font-size:clamp(2.2rem,5vw,4rem); margin-top:1rem;">Agriculture <span class="text-green">Services</span></h1>
+    <p style="margin-top:1.2rem;">End-to-end agricultural solutions designed for Indian farmers — from soil to sale.</p>
+  </div>
+</section>
+
+<!-- ============ SECTION 2: SERVICES GRID ============ -->
+<section class="services-section">
+  <div class="container">
+    <div class="section-header center reveal">
+      <span class="section-label">Our Services</span>
+      <h2>Everything Your <span class="text-green">Farm Needs</span></h2>
+      <div class="section-divider center"></div>
+      <p>We provide a full spectrum of agri-tech and farm management services to maximise your land's potential.</p>
+    </div>
+    <div class="services-grid stagger-children">
+      <div class="service-card reveal">
+        <div class="service-icon">🌱</div>
+        <h3>Crop Management</h3>
+        <p>Expert crop planning, variety selection, IPM (Integrated Pest Management), and harvest scheduling for maximum yield with minimum chemical inputs.</p>
+        <a href="contact.html" class="service-link">Get Consultation →</a>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">💧</div>
+        <h3>Smart Irrigation</h3>
+        <p>IoT-powered drip and sprinkler systems with real-time soil moisture sensors, automated schedules, and remote monitoring dashboards.</p>
+        <a href="contact.html" class="service-link">Learn More →</a>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">🚁</div>
+        <h3>Drone Services</h3>
+        <p>Multispectral crop mapping, precision pesticide/fertilizer spraying, plant health imaging, and aerial boundary surveys.</p>
+        <a href="contact.html" class="service-link">Book a Flight →</a>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">🧪</div>
+        <h3>Soil Analysis</h3>
+        <p>Laboratory-grade NPK and micronutrient testing, pH mapping, and fully customised soil amendment plans for every crop.</p>
+        <a href="contact.html" class="service-link">Test Your Soil →</a>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">📦</div>
+        <h3>Market Linkage</h3>
+        <p>Direct connections to APMC mandis, retail chains, exporters, and FPOs so farmers get fair price for their produce.</p>
+        <a href="contact.html" class="service-link">Find Markets →</a>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">🌦️</div>
+        <h3>Agri Insurance</h3>
+        <p>Crop insurance advisory and enrollment support under PMFBY and private schemes, with claim assistance during crop loss events.</p>
+        <a href="contact.html" class="service-link">Get Covered →</a>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">🏫</div>
+        <h3>Farmer Training</h3>
+        <p>On-field workshops, digital literacy programmes, and KVK-certified agri training to upskill farmers at every level.</p>
+        <a href="contact.html" class="service-link">Enroll Now →</a>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">📊</div>
+        <h3>Farm Analytics</h3>
+        <p>Digital farm records, yield forecasting models, cost-benefit analysis, and custom reports to make data-driven decisions.</p>
+        <a href="contact.html" class="service-link">Explore Analytics →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SECTION 3: OUR PROCESS ============ -->
+<section class="process-section">
+  <div class="container">
+    <div class="section-header center reveal">
+      <span class="section-label">How It Works</span>
+      <h2>Our <span class="text-green">Process</span></h2>
+      <div class="section-divider center"></div>
+      <p>A simple 4-step engagement process designed to deliver fast results with minimum disruption to your farming calendar.</p>
+    </div>
+    <div class="process-steps stagger-children">
+      <div class="process-step reveal">
+        <div class="step-num">01</div>
+        <div class="step-icon">📋</div>
+        <h3>Assessment</h3>
+        <p>We visit your farm, assess soil health, water sources, existing infrastructure, and crop history to understand your unique situation.</p>
+      </div>
+      <div class="process-step reveal">
+        <div class="step-num">02</div>
+        <div class="step-icon">🗺️</div>
+        <h3>Custom Plan</h3>
+        <p>Our agronomists create a tailor-made farm development plan with realistic milestones, cost projections, and expected ROI.</p>
+      </div>
+      <div class="process-step reveal">
+        <div class="step-num">03</div>
+        <div class="step-icon">⚙️</div>
+        <h3>Implementation</h3>
+        <p>Our field team installs systems, deploys technology, provides hands-on training, and monitors the first crop cycle with you.</p>
+      </div>
+      <div class="process-step reveal">
+        <div class="step-num">04</div>
+        <div class="step-icon">📈</div>
+        <h3>Ongoing Support</h3>
+        <p>Season-after-season support via WhatsApp helpline, periodic farm visits, and an online dashboard to track your farm's progress.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SECTION 4: SERVICE IMAGES ============ -->
+<section class="products-section">
+  <div class="container">
+    <div class="section-header center reveal">
+      <span class="section-label">In Action</span>
+      <h2>See Our <span class="text-green">Services at Work</span></h2>
+      <div class="section-divider center"></div>
+    </div>
+    <div class="products-grid stagger-children">
+      <div class="product-card reveal">
+        <div class="product-img-wrap">
+          <img src="images/service-crop.jpg" alt="Crop management" loading="lazy" />
+          <span class="product-tag">Crop Care</span>
+        </div>
+        <div class="product-info">
+          <h3>Field Crop Monitoring</h3>
+          <p>Weekly field visits by our agronomists to track crop health, pest pressure, and nutrient status.</p>
+        </div>
+      </div>
+      <div class="product-card reveal">
+        <div class="product-img-wrap">
+          <img src="images/service-drone.jpg" alt="Drone spraying" loading="lazy" />
+          <span class="product-tag">Agri-Drones</span>
+        </div>
+        <div class="product-info">
+          <h3>Precision Drone Spraying</h3>
+          <p>10x faster than manual spraying with 30% less chemical usage. GPS-guided for perfect coverage every time.</p>
+        </div>
+      </div>
+      <div class="product-card reveal">
+        <div class="product-img-wrap">
+          <img src="images/service-irrigation.jpg" alt="Irrigation" loading="lazy" />
+          <span class="product-tag">Smart Water</span>
+        </div>
+        <div class="product-info">
+          <h3>Automated Drip Systems</h3>
+          <p>Soil-moisture triggered irrigation that delivers water only when and where crops need it most.</p>
+        </div>
+      </div>
+      <div class="product-card reveal">
+        <div class="product-img-wrap">
+          <img src="images/service-soil.jpg" alt="Soil testing" loading="lazy" />
+          <span class="product-tag">Soil Health</span>
+        </div>
+        <div class="product-info">
+          <h3>Lab Soil Testing</h3>
+          <p>NABL-accredited lab results within 5 business days with full PDF report and fertilizer schedule.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="cta-bg-pattern"></div>
+  <div class="container">
+    <div class="cta-content reveal">
+      <span class="section-label" style="justify-content:center;">Start Today</span>
+      <h2>Ready to <span class="text-green">Upgrade Your Farm?</span></h2>
+      <p>Book a free farm assessment and get a customised service plan within 48 hours.</p>
+      <div class="cta-buttons">
+        <a href="contact.html" class="btn-primary"><span>Book Free Assessment →</span></a>
+        <a href="about.html" class="btn-outline">About Stackly</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <div class="logo-icon">🌿</div>
+          <div class="logo-text">Stack<span>ly</span></div>
+        </a>
+        <p>Empowering farmers with sustainable technology and agri-expertise since 2008.</p>
+        <div class="footer-social">
+          <a href="#" class="social-link">f</a>
+          <a href="#" class="social-link">𝕏</a>
+          <a href="#" class="social-link">in</a>
+          <a href="#" class="social-link">▶</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">Crop Management</a></li>
+          <li><a href="services.html">Smart Irrigation</a></li>
+          <li><a href="services.html">Drone Services</a></li>
+          <li><a href="services.html">Soil Analysis</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:info@stackly.in">info@stackly.in</a></li>
+          <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+          <li><a href="#">Chennai, Tamil Nadu</a></li>
+          <li><a href="#">Mon–Sat, 9AM–6PM</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Stackly Agriculture. All rights reserved.</p>
+      <p>Designed with 🌱 for Indian Farmers</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Stackly Agriculture — Get in touch for farm consultations, services, and support." />
+  <title>Contact Us — Stackly Agriculture</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="animations.css" />
+</head>
+<body>
+
+<div class="page-loader" id="page-loader">
+  <div class="loader-logo">Stack<span>ly</span></div>
+  <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+</div>
+<div id="scroll-progress"></div>
+<button id="back-to-top" aria-label="Back to top">↑</button>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon">🌿</div>
+      <div class="logo-text">Stack<span>ly</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html" class="active nav-cta">Contact Us</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+<div class="mobile-nav" id="mobile-nav">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="blog.html">Blog</a>
+  <a href="contact.html" class="active">Contact</a>
+</div>
+
+<!-- ============ SECTION 1: PAGE HERO ============ -->
+<section class="page-hero">
+  <div class="page-hero-content">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a><span>/</span><span>Contact</span>
+    </div>
+    <span class="section-label">Reach Us</span>
+    <h1 style="font-size:clamp(2.2rem,5vw,4rem); margin-top:1rem;">Let's <span class="text-green">Talk Farming</span></h1>
+    <p style="margin-top:1.2rem;">Whether you need a soil test, drone booking, or a complete farm makeover — our team is ready to help. Response within 24 hours, guaranteed.</p>
+  </div>
+</section>
+
+<!-- ============ SECTION 2: CONTACT FORM + INFO ============ -->
+<section class="contact-section">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- LEFT: CONTACT INFO -->
+      <div class="contact-info reveal-left">
+        <span class="section-label">Get in Touch</span>
+        <h3 style="margin-top:0.8rem; margin-bottom:1rem;">We're Here to <span class="text-green">Help You Grow</span></h3>
+        <p>Reach out via the form, phone, or email — our agronomy team responds to every enquiry personally.</p>
+
+        <div class="contact-items" style="margin-top:2rem;">
+          <div class="contact-item">
+            <div class="contact-item-icon">📍</div>
+            <div class="contact-item-text">
+              <label>Our Office</label>
+              <p>No. 12, Anna Salai, Nandanam<br />Chennai, Tamil Nadu — 600 035</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">📞</div>
+            <div class="contact-item-text">
+              <label>Phone / WhatsApp</label>
+              <p><a href="tel:+919876543210" style="color:#a7c4a7;">+91 98765 43210</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">✉️</div>
+            <div class="contact-item-text">
+              <label>Email Us</label>
+              <p><a href="mailto:info@stackly.in" style="color:#a7c4a7;">info@stackly.in</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">🕐</div>
+            <div class="contact-item-text">
+              <label>Working Hours</label>
+              <p>Monday – Saturday<br />9:00 AM to 6:00 PM IST</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- QUICK RESPONSE BADGE -->
+        <div style="margin-top:2rem; padding:1.4rem; background:var(--bg-card); border:1px solid var(--border-accent); border-radius:var(--radius-md); display:flex; align-items:center; gap:1rem;">
+          <div style="font-size:2rem;">⚡</div>
+          <div>
+            <strong style="font-family:var(--font-ui); font-size:0.92rem; color:var(--text-primary);">Fast Response Guaranteed</strong>
+            <p style="font-size:0.82rem; color:#6b9b6b; margin:0; margin-top:0.2rem;">All enquiries answered within 24 business hours</p>
+          </div>
+        </div>
+
+        <!-- SOCIAL LINKS -->
+        <div style="margin-top:2rem;">
+          <p style="font-family:var(--font-ui); font-size:0.8rem; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#5a8a5a; margin-bottom:1rem;">Follow Us</p>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="Facebook">f</a>
+            <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+            <a href="#" class="social-link" aria-label="Instagram">in</a>
+            <a href="#" class="social-link" aria-label="YouTube">▶</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: CONTACT FORM -->
+      <div class="contact-form-wrap reveal-right">
+        <h3>Send Us a <span class="text-green">Message</span></h3>
+        <p>Fill in the details below and our agronomy team will get back to you with a personalised response.</p>
+
+        <form id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first-name">First Name *</label>
+              <input type="text" id="first-name" name="first-name" placeholder="Rajan" required />
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name *</label>
+              <input type="text" id="last-name" name="last-name" placeholder="Kumar" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" placeholder="rajan@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone / WhatsApp Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" />
+          </div>
+          <div class="form-group">
+            <label for="service">Service Interested In</label>
+            <select id="service" name="service">
+              <option value="" disabled selected>Select a service</option>
+              <option value="crop">Crop Management</option>
+              <option value="irrigation">Smart Irrigation</option>
+              <option value="drone">Drone Services</option>
+              <option value="soil">Soil Analysis</option>
+              <option value="market">Market Linkage</option>
+              <option value="other">Other / General Enquiry</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="farm-size">Farm Size (Acres)</label>
+            <input type="text" id="farm-size" name="farm-size" placeholder="e.g. 5 acres" />
+          </div>
+          <div class="form-group" style="grid-column:span 2;">
+            <label for="message">Your Message *</label>
+            <textarea id="message" name="message" placeholder="Tell us about your farm, your crop, and how we can help..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary" style="width:100%; justify-content:center; padding:1rem;">
+            <span>Send Message →</span>
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ SECTION 3: GOOGLE MAP ============ -->
+<section class="map-section">
+  <div class="section-header center reveal" style="padding:60px 0 0; background:var(--bg-primary);">
+    <div class="container">
+      <span class="section-label">Find Us</span>
+      <h2 style="margin-top:0.5rem; margin-bottom:0.5rem;">Our <span class="text-green">Location</span></h2>
+      <p style="margin-bottom:2rem;">Visit our Chennai office for in-person consultations and seed sample pickups.</p>
+    </div>
+  </div>
+  <div class="map-wrapper">
+    <!-- Google Maps Embed — Chennai, Tamil Nadu -->
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.9875540437373!2d80.2353983!3d13.0464218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267012dcea3c9%3A0x41f0d6a2d5f5cb5!2sNandanam%2C%20Chennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1718110000000!5m2!1sen!2sin"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      title="Stackly Agriculture Office Location">
+    </iframe>
+  </div>
+</section>
+
+<!-- ============ SECTION 4: FAQ ============ -->
+<section class="faq-section">
+  <div class="container">
+    <div class="section-header center reveal">
+      <span class="section-label">Common Questions</span>
+      <h2>Frequently Asked <span class="text-green">Questions</span></h2>
+      <div class="section-divider center"></div>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <div class="faq-question">
+          How quickly can you start on my farm?
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>After an initial consultation call, we can conduct a field assessment within 3–5 working days. For urgent requests such as a crop pest outbreak or irrigation failure, we prioritise same-day or next-day visits.</p>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-question">
+          What is the minimum farm size you work with?
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>We work with farms as small as half an acre. We believe every farmer deserves access to quality agricultural services regardless of their land size. Our pricing is structured to be fair for small and large holdings alike.</p>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-question">
+          Do you offer services outside Tamil Nadu?
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>Yes — we currently operate across Tamil Nadu, Kerala, Karnataka, Andhra Pradesh, and Telangana. We are expanding to Maharashtra and Gujarat in 2025. Remote consultations via video call are available nationwide.</p>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-question">
+          How much does a soil analysis test cost?
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>A standard NPK + pH soil test starts from ₹499 per sample. A comprehensive micronutrient panel (12 parameters) is ₹1,499. For farms above 10 acres, we offer discounted multi-sample packages. Contact us for a custom quote.</p>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-question">
+          Is Stackly Agriculture certified or government-recognised?
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>Yes. We are empanelled with the Tamil Nadu Agriculture Department and NABARD. Our soil lab is NABL-accredited, and our agronomists are certified by the National Institute of Agricultural Extension Management (MANAGE).</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <div class="logo-icon">🌿</div>
+          <div class="logo-text">Stack<span>ly</span></div>
+        </a>
+        <p>Empowering farmers with sustainable technology and agri-expertise since 2008.</p>
+        <div class="footer-social">
+          <a href="#" class="social-link">f</a>
+          <a href="#" class="social-link">𝕏</a>
+          <a href="#" class="social-link">in</a>
+          <a href="#" class="social-link">▶</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">Crop Management</a></li>
+          <li><a href="services.html">Smart Irrigation</a></li>
+          <li><a href="services.html">Drone Services</a></li>
+          <li><a href="services.html">Soil Analysis</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:info@stackly.in">info@stackly.in</a></li>
+          <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+          <li><a href="#">Chennai, Tamil Nadu</a></li>
+          <li><a href="#">Mon–Sat, 9AM–6PM</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Stackly Agriculture. All rights reserved.</p>
+      <p>Designed with 🌱 for Indian Farmers</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
