@@ -3,28 +3,41 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Stackly Agriculture Services — Crop management, smart irrigation, drone services and soil analysis." />
   <title>Services — Stackly Agriculture</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="animations.css" />
 </head>
 <body>
 
 <div class="page-loader" id="page-loader">
-  <div class="loader-logo">Stack<span>ly</span></div>
+  <div class="loader-logo">STACK<span>LY</span></div>
   <div class="loader-bar"><div class="loader-bar-fill"></div></div>
 </div>
 <div id="scroll-progress"></div>
-<button id="back-to-top" aria-label="Back to top">↑</button>
+<button id="back-to-top">↑</button>
 
-<!-- NAVBAR -->
 <nav class="navbar" id="navbar">
   <div class="nav-inner">
     <a href="index.html" class="nav-logo">
-      <div class="logo-icon">🌿</div>
-      <div class="logo-text">Stack<span>ly</span></div>
+      <div class="logo-icon">
+        <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs><linearGradient id="lg" x1="0" y1="0" x2="44" y2="44" gradientUnits="userSpaceOnUse"><stop stop-color="#4ade80"/><stop offset="1" stop-color="#a3e635"/></linearGradient></defs>
+          <rect width="44" height="44" rx="11" fill="url(#lg)" opacity="0.1"/>
+          <rect x="0.7" y="0.7" width="42.6" height="42.6" rx="10.3" stroke="url(#lg)" stroke-width="1.4"/>
+          <line x1="22" y1="38" x2="22" y2="10" stroke="url(#lg)" stroke-width="2" stroke-linecap="round"/>
+          <ellipse cx="22" cy="10" rx="4.5" ry="6" fill="url(#lg)"/>
+          <ellipse cx="15" cy="17" rx="3.8" ry="5.5" fill="#4ade80" opacity="0.85" transform="rotate(-30 15 17)"/>
+          <ellipse cx="29" cy="17" rx="3.8" ry="5.5" fill="#4ade80" opacity="0.85" transform="rotate(30 29 17)"/>
+          <ellipse cx="12" cy="26" rx="3.2" ry="5" fill="#a3e635" opacity="0.6" transform="rotate(-25 12 26)"/>
+          <ellipse cx="32" cy="26" rx="3.2" ry="5" fill="#a3e635" opacity="0.6" transform="rotate(25 32 26)"/>
+          <path d="M19 38 Q16 41 14 43" stroke="url(#lg)" stroke-width="1.4" stroke-linecap="round" opacity="0.45"/>
+          <path d="M25 38 Q28 41 30 43" stroke="url(#lg)" stroke-width="1.4" stroke-linecap="round" opacity="0.45"/>
+        </svg>
+      </div>
+      <div class="logo-text">
+        <div class="logo-wordmark">STACK<span>LY</span></div>
+        <div class="logo-tagline">Agriculture</div>
+      </div>
     </a>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
@@ -44,19 +57,17 @@
   <a href="contact.html">Contact</a>
 </div>
 
-<!-- ============ SECTION 1: PAGE HERO ============ -->
+<!-- SECTION 1: PAGE HERO -->
 <section class="page-hero">
   <div class="page-hero-content">
-    <div class="breadcrumb">
-      <a href="index.html">Home</a><span>/</span><span>Services</span>
-    </div>
+    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Services</span></div>
     <span class="section-label">What We Offer</span>
-    <h1 style="font-size:clamp(2.2rem,5vw,4rem); margin-top:1rem;">Agriculture <span class="text-green">Services</span></h1>
+    <h1 style="font-size:clamp(2.2rem,5vw,4rem);margin-top:1rem;">Agriculture <span class="text-green">Services</span></h1>
     <p style="margin-top:1.2rem;">End-to-end agricultural solutions designed for Indian farmers — from soil to sale.</p>
   </div>
 </section>
 
-<!-- ============ SECTION 2: SERVICES GRID ============ -->
+<!-- SECTION 2: SERVICES GRID -->
 <section class="services-section">
   <div class="container">
     <div class="section-header center reveal">
@@ -69,7 +80,7 @@
       <div class="service-card reveal">
         <div class="service-icon">🌱</div>
         <h3>Crop Management</h3>
-        <p>Expert crop planning, variety selection, IPM (Integrated Pest Management), and harvest scheduling for maximum yield with minimum chemical inputs.</p>
+        <p>Expert crop planning, variety selection, IPM and harvest scheduling for maximum yield with minimum chemical inputs.</p>
         <a href="contact.html" class="service-link">Get Consultation →</a>
       </div>
       <div class="service-card reveal">
@@ -81,7 +92,7 @@
       <div class="service-card reveal">
         <div class="service-icon">🚁</div>
         <h3>Drone Services</h3>
-        <p>Multispectral crop mapping, precision pesticide/fertilizer spraying, plant health imaging, and aerial boundary surveys.</p>
+        <p>Multispectral crop mapping, precision pesticide spraying, plant health imaging, and aerial boundary surveys.</p>
         <a href="contact.html" class="service-link">Book a Flight →</a>
       </div>
       <div class="service-card reveal">
@@ -118,7 +129,7 @@
   </div>
 </section>
 
-<!-- ============ SECTION 3: OUR PROCESS ============ -->
+<!-- SECTION 3: PROCESS -->
 <section class="process-section">
   <div class="container">
     <div class="section-header center reveal">
@@ -156,7 +167,7 @@
   </div>
 </section>
 
-<!-- ============ SECTION 4: SERVICE IMAGES ============ -->
+<!-- SECTION 4: SERVICE IMAGES -->
 <section class="products-section">
   <div class="container">
     <div class="section-header center reveal">
@@ -166,44 +177,20 @@
     </div>
     <div class="products-grid stagger-children">
       <div class="product-card reveal">
-        <div class="product-img-wrap">
-          <img src="images/service-crop.jpg" alt="Crop management" loading="lazy" />
-          <span class="product-tag">Crop Care</span>
-        </div>
-        <div class="product-info">
-          <h3>Field Crop Monitoring</h3>
-          <p>Weekly field visits by our agronomists to track crop health, pest pressure, and nutrient status.</p>
-        </div>
+        <div class="product-img-wrap"><img src="images/service-crop.jpg" alt="Crop management" loading="lazy" /><span class="product-tag">Crop Care</span></div>
+        <div class="product-info"><h3>Field Crop Monitoring</h3><p>Weekly field visits by our agronomists to track crop health, pest pressure, and nutrient status.</p></div>
       </div>
       <div class="product-card reveal">
-        <div class="product-img-wrap">
-          <img src="images/service-drone.jpg" alt="Drone spraying" loading="lazy" />
-          <span class="product-tag">Agri-Drones</span>
-        </div>
-        <div class="product-info">
-          <h3>Precision Drone Spraying</h3>
-          <p>10x faster than manual spraying with 30% less chemical usage. GPS-guided for perfect coverage every time.</p>
-        </div>
+        <div class="product-img-wrap"><img src="images/service-drone.jpg" alt="Drone spraying" loading="lazy" /><span class="product-tag">Agri-Drones</span></div>
+        <div class="product-info"><h3>Precision Drone Spraying</h3><p>10x faster than manual spraying with 30% less chemical usage. GPS-guided for perfect coverage every time.</p></div>
       </div>
       <div class="product-card reveal">
-        <div class="product-img-wrap">
-          <img src="images/service-irrigation.jpg" alt="Irrigation" loading="lazy" />
-          <span class="product-tag">Smart Water</span>
-        </div>
-        <div class="product-info">
-          <h3>Automated Drip Systems</h3>
-          <p>Soil-moisture triggered irrigation that delivers water only when and where crops need it most.</p>
-        </div>
+        <div class="product-img-wrap"><img src="images/service-irrigation.jpg" alt="Irrigation" loading="lazy" /><span class="product-tag">Smart Water</span></div>
+        <div class="product-info"><h3>Automated Drip Systems</h3><p>Soil-moisture triggered irrigation that delivers water only when and where crops need it most.</p></div>
       </div>
       <div class="product-card reveal">
-        <div class="product-img-wrap">
-          <img src="images/service-soil.jpg" alt="Soil testing" loading="lazy" />
-          <span class="product-tag">Soil Health</span>
-        </div>
-        <div class="product-info">
-          <h3>Lab Soil Testing</h3>
-          <p>NABL-accredited lab results within 5 business days with full PDF report and fertilizer schedule.</p>
-        </div>
+        <div class="product-img-wrap"><img src="images/service-soil.jpg" alt="Soil testing" loading="lazy" /><span class="product-tag">Soil Health</span></div>
+        <div class="product-info"><h3>Lab Soil Testing</h3><p>NABL-accredited lab results within 5 business days with full PDF report and fertilizer schedule.</p></div>
       </div>
     </div>
   </div>
@@ -231,43 +218,45 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="index.html" class="nav-logo">
-          <div class="logo-icon">🌿</div>
-          <div class="logo-text">Stack<span>ly</span></div>
+          <div class="logo-icon">
+            <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs><linearGradient id="flg" x1="0" y1="0" x2="44" y2="44" gradientUnits="userSpaceOnUse"><stop stop-color="#4ade80"/><stop offset="1" stop-color="#a3e635"/></linearGradient></defs>
+              <rect width="44" height="44" rx="11" fill="url(#flg)" opacity="0.1"/>
+              <rect x="0.7" y="0.7" width="42.6" height="42.6" rx="10.3" stroke="url(#flg)" stroke-width="1.4"/>
+              <line x1="22" y1="38" x2="22" y2="10" stroke="url(#flg)" stroke-width="2" stroke-linecap="round"/>
+              <ellipse cx="22" cy="10" rx="4.5" ry="6" fill="url(#flg)"/>
+              <ellipse cx="15" cy="17" rx="3.8" ry="5.5" fill="#4ade80" opacity="0.85" transform="rotate(-30 15 17)"/>
+              <ellipse cx="29" cy="17" rx="3.8" ry="5.5" fill="#4ade80" opacity="0.85" transform="rotate(30 29 17)"/>
+              <ellipse cx="12" cy="26" rx="3.2" ry="5" fill="#a3e635" opacity="0.6" transform="rotate(-25 12 26)"/>
+              <ellipse cx="32" cy="26" rx="3.2" ry="5" fill="#a3e635" opacity="0.6" transform="rotate(25 32 26)"/>
+              <path d="M19 38 Q16 41 14 43" stroke="url(#flg)" stroke-width="1.4" stroke-linecap="round" opacity="0.45"/>
+              <path d="M25 38 Q28 41 30 43" stroke="url(#flg)" stroke-width="1.4" stroke-linecap="round" opacity="0.45"/>
+            </svg>
+          </div>
+          <div class="logo-text">
+            <div class="logo-wordmark">STACK<span>LY</span></div>
+            <div class="logo-tagline">Agriculture</div>
+          </div>
         </a>
         <p>Empowering farmers with sustainable technology and agri-expertise since 2008.</p>
         <div class="footer-social">
-          <a href="#" class="social-link">f</a>
-          <a href="#" class="social-link">𝕏</a>
-          <a href="#" class="social-link">in</a>
-          <a href="#" class="social-link">▶</a>
+          <!-- CHANGED: href="#" → href="404.html" for all social icons -->
+          <a href="404.html" class="social-link">f</a>
+          <a href="404.html" class="social-link">𝕏</a>
+          <a href="404.html" class="social-link">in</a>
+          <a href="404.html" class="social-link">▶</a>
         </div>
       </div>
-      <div class="footer-col">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Services</h4>
-        <ul>
-          <li><a href="services.html">Crop Management</a></li>
-          <li><a href="services.html">Smart Irrigation</a></li>
-          <li><a href="services.html">Drone Services</a></li>
-          <li><a href="services.html">Soil Analysis</a></li>
-        </ul>
-      </div>
+      <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Services</h4><ul><li><a href="services.html">Crop Management</a></li><li><a href="services.html">Smart Irrigation</a></li><li><a href="services.html">Drone Services</a></li><li><a href="services.html">Soil Analysis</a></li></ul></div>
       <div class="footer-col">
         <h4>Contact</h4>
         <ul>
           <li><a href="mailto:info@stackly.in">info@stackly.in</a></li>
           <li><a href="tel:+919876543210">+91 98765 43210</a></li>
-          <li><a href="#">Chennai, Tamil Nadu</a></li>
-          <li><a href="#">Mon–Sat, 9AM–6PM</a></li>
+          <!-- CHANGED: href="#" → href="404.html" -->
+          <li><a href="404.html">Chennai, Tamil Nadu</a></li>
+          <li><a href="404.html">Mon–Sat, 9AM–6PM</a></li>
         </ul>
       </div>
     </div>
@@ -277,7 +266,6 @@
     </div>
   </div>
 </footer>
-
 <script src="script.js"></script>
 </body>
 </html>

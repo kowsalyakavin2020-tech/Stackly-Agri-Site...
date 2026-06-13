@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 — Page Not Found | Stackly Agriculture</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="animations.css" />
+  <style>
+    .error-page {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+      background: var(--bg-primary);
+    }
+    .error-code {
+      font-family: var(--font-display);
+      font-size: clamp(6rem, 20vw, 12rem);
+      font-weight: 900;
+      line-height: 1;
+      background: linear-gradient(135deg, #4ade80, #a3e635);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 1rem;
+    }
+    .error-title {
+      font-size: clamp(1.5rem, 4vw, 2.5rem);
+      color: var(--text-primary);
+      margin-bottom: 1rem;
+    }
+    .error-desc {
+      color: #7a9e7a;
+      font-size: 1.05rem;
+      max-width: 420px;
+      margin: 0 auto 2.5rem;
+    }
+    .error-icon {
+      font-size: 4rem;
+      margin-bottom: 1.5rem;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar scrolled" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon">
+        <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="lg" x1="0" y1="0" x2="44" y2="44" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#4ade80"/><stop offset="1" stop-color="#a3e635"/>
+            </linearGradient>
+          </defs>
+          <rect width="44" height="44" rx="11" fill="url(#lg)" opacity="0.1"/>
+          <rect x="0.7" y="0.7" width="42.6" height="42.6" rx="10.3" stroke="url(#lg)" stroke-width="1.4"/>
+          <line x1="22" y1="38" x2="22" y2="10" stroke="url(#lg)" stroke-width="2" stroke-linecap="round"/>
+          <ellipse cx="22" cy="10" rx="4.5" ry="6" fill="url(#lg)"/>
+          <ellipse cx="15" cy="17" rx="3.8" ry="5.5" fill="#4ade80" opacity="0.85" transform="rotate(-30 15 17)"/>
+          <ellipse cx="29" cy="17" rx="3.8" ry="5.5" fill="#4ade80" opacity="0.85" transform="rotate(30 29 17)"/>
+          <ellipse cx="12" cy="26" rx="3.2" ry="5" fill="#a3e635" opacity="0.6" transform="rotate(-25 12 26)"/>
+          <ellipse cx="32" cy="26" rx="3.2" ry="5" fill="#a3e635" opacity="0.6" transform="rotate(25 32 26)"/>
+          <path d="M19 38 Q16 41 14 43" stroke="url(#lg)" stroke-width="1.4" stroke-linecap="round" opacity="0.45"/>
+          <path d="M25 38 Q28 41 30 43" stroke="url(#lg)" stroke-width="1.4" stroke-linecap="round" opacity="0.45"/>
+        </svg>
+      </div>
+      <div class="logo-text">
+        <div class="logo-wordmark">STACK<span>LY</span></div>
+        <div class="logo-tagline">Agriculture</div>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<div class="mobile-nav" id="mobile-nav">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="blog.html">Blog</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<div class="error-page">
+  <div>
+    <span class="error-icon">🌾</span>
+    <div class="error-code">404</div>
+    <h1 class="error-title">Page Not Found</h1>
+    <p class="error-desc">Looks like this field hasn't been planted yet. The page you're looking for doesn't exist or has been moved.</p>
+    <a href="index.html" class="btn-primary"><span>← Back to Home</span></a>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -3,30 +3,41 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="About Stackly Agriculture — Our story, mission, team and values." />
   <title>About Us — Stackly Agriculture</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="animations.css" />
 </head>
 <body>
 
-<!-- PAGE LOADER -->
 <div class="page-loader" id="page-loader">
-  <div class="loader-logo">Stack<span>ly</span></div>
+  <div class="loader-logo">STACK<span>LY</span></div>
   <div class="loader-bar"><div class="loader-bar-fill"></div></div>
 </div>
-
 <div id="scroll-progress"></div>
-<button id="back-to-top" aria-label="Back to top">↑</button>
+<button id="back-to-top">↑</button>
 
-<!-- NAVBAR -->
 <nav class="navbar" id="navbar">
   <div class="nav-inner">
     <a href="index.html" class="nav-logo">
-      <div class="logo-icon">🌿</div>
-      <div class="logo-text">Stack<span>ly</span></div>
+      <div class="logo-icon">
+        <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs><linearGradient id="lg" x1="0" y1="0" x2="44" y2="44" gradientUnits="userSpaceOnUse"><stop stop-color="#4ade80"/><stop offset="1" stop-color="#a3e635"/></linearGradient></defs>
+          <rect width="44" height="44" rx="11" fill="url(#lg)" opacity="0.1"/>
+          <rect x="0.7" y="0.7" width="42.6" height="42.6" rx="10.3" stroke="url(#lg)" stroke-width="1.4"/>
+          <line x1="22" y1="38" x2="22" y2="10" stroke="url(#lg)" stroke-width="2" stroke-linecap="round"/>
+          <ellipse cx="22" cy="10" rx="4.5" ry="6" fill="url(#lg)"/>
+          <ellipse cx="15" cy="17" rx="3.8" ry="5.5" fill="#4ade80" opacity="0.85" transform="rotate(-30 15 17)"/>
+          <ellipse cx="29" cy="17" rx="3.8" ry="5.5" fill="#4ade80" opacity="0.85" transform="rotate(30 29 17)"/>
+          <ellipse cx="12" cy="26" rx="3.2" ry="5" fill="#a3e635" opacity="0.6" transform="rotate(-25 12 26)"/>
+          <ellipse cx="32" cy="26" rx="3.2" ry="5" fill="#a3e635" opacity="0.6" transform="rotate(25 32 26)"/>
+          <path d="M19 38 Q16 41 14 43" stroke="url(#lg)" stroke-width="1.4" stroke-linecap="round" opacity="0.45"/>
+          <path d="M25 38 Q28 41 30 43" stroke="url(#lg)" stroke-width="1.4" stroke-linecap="round" opacity="0.45"/>
+        </svg>
+      </div>
+      <div class="logo-text">
+        <div class="logo-wordmark">STACK<span>LY</span></div>
+        <div class="logo-tagline">Agriculture</div>
+      </div>
     </a>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
@@ -38,7 +49,6 @@
     <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
   </div>
 </nav>
-
 <div class="mobile-nav" id="mobile-nav">
   <a href="index.html">Home</a>
   <a href="about.html" class="active">About</a>
@@ -47,36 +57,29 @@
   <a href="contact.html">Contact</a>
 </div>
 
-<!-- ============ SECTION 1: PAGE HERO ============ -->
+<!-- SECTION 1: PAGE HERO -->
 <section class="page-hero">
   <div class="page-hero-content">
-    <div class="breadcrumb">
-      <a href="index.html">Home</a>
-      <span>/</span>
-      <span>About</span>
-    </div>
+    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>About</span></div>
     <span class="section-label">Our Story</span>
-    <h1 style="font-size:clamp(2.2rem,5vw,4rem); margin-top:1rem;">Built from the <span class="text-green">Soil Up</span></h1>
+    <h1 style="font-size:clamp(2.2rem,5vw,4rem);margin-top:1rem;">Built from the <span class="text-green">Soil Up</span></h1>
     <p style="margin-top:1.2rem;">From a single-acre pilot farm in 2008 to a nationwide agri-tech company serving over 1,200 farmers — this is the Stackly story.</p>
   </div>
 </section>
 
-<!-- ============ SECTION 2: MISSION & VALUES ============ -->
+<!-- SECTION 2: MISSION & VALUES -->
 <section class="about-preview">
   <div class="container">
     <div class="about-grid">
       <div class="about-image-wrap reveal-left">
         <img src="images/about-farm.jpg" alt="Our mission" class="about-img-main" loading="lazy" />
-        <div class="about-badge float-anim">
-          <strong>2008</strong>
-          <span>Founded</span>
-        </div>
+        <div class="about-badge float-anim"><strong>2008</strong><span>Founded</span></div>
       </div>
       <div class="about-text reveal-right">
         <span class="section-label">Mission & Vision</span>
         <h2>Technology in Service of <span class="text-green">Farmers</span></h2>
         <div class="section-divider"></div>
-        <p style="margin-top:1.5rem;">Our mission is to make precision agriculture accessible to every Indian farmer — from small-scale subsistence growers to large commercial operations. We believe sustainable food systems begin at the farm gate.</p>
+        <p style="margin-top:1.5rem;">Our mission is to make precision agriculture accessible to every Indian farmer — from small-scale subsistence growers to large commercial operations.</p>
         <p style="margin-top:1rem;">Our vision is a food-secure India where technology empowers farmers to be profitable, resilient, and environmentally responsible stewards of the land.</p>
         <div class="features-list" style="margin-top:2rem;">
           <div class="feature-item">Farmer-First Approach</div>
@@ -91,31 +94,19 @@
   </div>
 </section>
 
-<!-- ============ SECTION 3: STATS ============ -->
+<!-- SECTION 3: STATS -->
 <section class="stats-section">
   <div class="container">
     <div class="stats-grid stagger-children">
-      <div class="stat-box reveal">
-        <div class="stat-number"><span data-count="1200">0</span>+</div>
-        <div class="stat-label">Farms Served</div>
-      </div>
-      <div class="stat-box reveal">
-        <div class="stat-number"><span data-count="48">0</span></div>
-        <div class="stat-label">Districts Covered</div>
-      </div>
-      <div class="stat-box reveal">
-        <div class="stat-number"><span data-count="120">0</span>+</div>
-        <div class="stat-label">Agri Experts on Team</div>
-      </div>
-      <div class="stat-box reveal">
-        <div class="stat-number"><span data-count="98">0</span>%</div>
-        <div class="stat-label">Client Retention</div>
-      </div>
+      <div class="stat-box reveal"><div class="stat-number"><span data-count="1200">0</span>+</div><div class="stat-label">Farms Served</div></div>
+      <div class="stat-box reveal"><div class="stat-number"><span data-count="48">0</span></div><div class="stat-label">Districts Covered</div></div>
+      <div class="stat-box reveal"><div class="stat-number"><span data-count="120">0</span>+</div><div class="stat-label">Agri Experts</div></div>
+      <div class="stat-box reveal"><div class="stat-number"><span data-count="98">0</span>%</div><div class="stat-label">Client Retention</div></div>
     </div>
   </div>
 </section>
 
-<!-- ============ SECTION 4: TEAM ============ -->
+<!-- SECTION 4: TEAM -->
 <section class="team-section">
   <div class="container">
     <div class="section-header center reveal">
@@ -126,44 +117,20 @@
     </div>
     <div class="team-grid stagger-children">
       <div class="team-card reveal">
-        <div class="team-img">
-          <img src="images/testimonial-1.jpg" alt="Dr. Anand Krishnan" loading="lazy" />
-        </div>
-        <div class="team-info">
-          <h4>Dr. Anand Krishnan</h4>
-          <p class="text-green">Founder & CEO</p>
-          <p style="font-size:0.83rem; margin-top:0.5rem;">Ph.D. Agronomy, IIT Madras. 20+ years in crop science and farm automation.</p>
-        </div>
+        <div class="team-img"><img src="images/testimonial-1.jpg" alt="Dr. Anand Krishnan" loading="lazy" /></div>
+        <div class="team-info"><h4>Dr. Anand Krishnan</h4><p class="text-green">Founder & CEO</p><p style="font-size:0.83rem;margin-top:0.5rem;">Ph.D. Agronomy, IIT Madras. 20+ years in crop science and farm automation.</p></div>
       </div>
       <div class="team-card reveal">
-        <div class="team-img">
-          <img src="images/testimonial-2.jpg" alt="Priya Suresh" loading="lazy" />
-        </div>
-        <div class="team-info">
-          <h4>Priya Suresh</h4>
-          <p class="text-green">Head of Agronomy</p>
-          <p style="font-size:0.83rem; margin-top:0.5rem;">MSc. Agri-Science. Specialises in organic transitions and soil health restoration.</p>
-        </div>
+        <div class="team-img"><img src="images/testimonial-2.jpg" alt="Priya Suresh" loading="lazy" /></div>
+        <div class="team-info"><h4>Priya Suresh</h4><p class="text-green">Head of Agronomy</p><p style="font-size:0.83rem;margin-top:0.5rem;">MSc. Agri-Science. Specialises in organic transitions and soil health restoration.</p></div>
       </div>
       <div class="team-card reveal">
-        <div class="team-img">
-          <img src="images/testimonial-3.jpg" alt="Karthik Rajan" loading="lazy" />
-        </div>
-        <div class="team-info">
-          <h4>Karthik Rajan</h4>
-          <p class="text-green">Drone & Tech Lead</p>
-          <p style="font-size:0.83rem; margin-top:0.5rem;">Engineering background with 8 years deploying agri-drone fleets across South India.</p>
-        </div>
+        <div class="team-img"><img src="images/testimonial-3.jpg" alt="Karthik Rajan" loading="lazy" /></div>
+        <div class="team-info"><h4>Karthik Rajan</h4><p class="text-green">Drone & Tech Lead</p><p style="font-size:0.83rem;margin-top:0.5rem;">Engineering background with 8 years deploying agri-drone fleets across South India.</p></div>
       </div>
       <div class="team-card reveal">
-        <div class="team-img">
-          <img src="images/testimonial-1.jpg" alt="Nisha Mohan" loading="lazy" />
-        </div>
-        <div class="team-info">
-          <h4>Nisha Mohan</h4>
-          <p class="text-green">Market Linkage Officer</p>
-          <p style="font-size:0.83rem; margin-top:0.5rem;">Connects farmers directly to retail chains, exporters, and FPO networks.</p>
-        </div>
+        <div class="team-img"><img src="images/testimonial-1.jpg" alt="Nisha Mohan" loading="lazy" /></div>
+        <div class="team-info"><h4>Nisha Mohan</h4><p class="text-green">Market Linkage Officer</p><p style="font-size:0.83rem;margin-top:0.5rem;">Connects farmers directly to retail chains, exporters, and FPO networks.</p></div>
       </div>
     </div>
   </div>
@@ -191,43 +158,45 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="index.html" class="nav-logo">
-          <div class="logo-icon">🌿</div>
-          <div class="logo-text">Stack<span>ly</span></div>
+          <div class="logo-icon">
+            <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs><linearGradient id="flg" x1="0" y1="0" x2="44" y2="44" gradientUnits="userSpaceOnUse"><stop stop-color="#4ade80"/><stop offset="1" stop-color="#a3e635"/></linearGradient></defs>
+              <rect width="44" height="44" rx="11" fill="url(#flg)" opacity="0.1"/>
+              <rect x="0.7" y="0.7" width="42.6" height="42.6" rx="10.3" stroke="url(#flg)" stroke-width="1.4"/>
+              <line x1="22" y1="38" x2="22" y2="10" stroke="url(#flg)" stroke-width="2" stroke-linecap="round"/>
+              <ellipse cx="22" cy="10" rx="4.5" ry="6" fill="url(#flg)"/>
+              <ellipse cx="15" cy="17" rx="3.8" ry="5.5" fill="#4ade80" opacity="0.85" transform="rotate(-30 15 17)"/>
+              <ellipse cx="29" cy="17" rx="3.8" ry="5.5" fill="#4ade80" opacity="0.85" transform="rotate(30 29 17)"/>
+              <ellipse cx="12" cy="26" rx="3.2" ry="5" fill="#a3e635" opacity="0.6" transform="rotate(-25 12 26)"/>
+              <ellipse cx="32" cy="26" rx="3.2" ry="5" fill="#a3e635" opacity="0.6" transform="rotate(25 32 26)"/>
+              <path d="M19 38 Q16 41 14 43" stroke="url(#flg)" stroke-width="1.4" stroke-linecap="round" opacity="0.45"/>
+              <path d="M25 38 Q28 41 30 43" stroke="url(#flg)" stroke-width="1.4" stroke-linecap="round" opacity="0.45"/>
+            </svg>
+          </div>
+          <div class="logo-text">
+            <div class="logo-wordmark">STACK<span>LY</span></div>
+            <div class="logo-tagline">Agriculture</div>
+          </div>
         </a>
         <p>Empowering farmers with sustainable technology and agri-expertise since 2008.</p>
         <div class="footer-social">
-          <a href="#" class="social-link">f</a>
-          <a href="#" class="social-link">𝕏</a>
-          <a href="#" class="social-link">in</a>
-          <a href="#" class="social-link">▶</a>
+          <!-- CHANGED: href="#" → href="404.html" for all social icons -->
+          <a href="404.html" class="social-link">f</a>
+          <a href="404.html" class="social-link">𝕏</a>
+          <a href="404.html" class="social-link">in</a>
+          <a href="404.html" class="social-link">▶</a>
         </div>
       </div>
-      <div class="footer-col">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Services</h4>
-        <ul>
-          <li><a href="services.html">Crop Management</a></li>
-          <li><a href="services.html">Smart Irrigation</a></li>
-          <li><a href="services.html">Drone Services</a></li>
-          <li><a href="services.html">Soil Analysis</a></li>
-        </ul>
-      </div>
+      <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Services</h4><ul><li><a href="services.html">Crop Management</a></li><li><a href="services.html">Smart Irrigation</a></li><li><a href="services.html">Drone Services</a></li><li><a href="services.html">Soil Analysis</a></li></ul></div>
       <div class="footer-col">
         <h4>Contact</h4>
         <ul>
           <li><a href="mailto:info@stackly.in">info@stackly.in</a></li>
           <li><a href="tel:+919876543210">+91 98765 43210</a></li>
-          <li><a href="#">Chennai, Tamil Nadu</a></li>
-          <li><a href="#">Mon–Sat, 9AM–6PM</a></li>
+          <!-- CHANGED: href="#" → href="404.html" -->
+          <li><a href="404.html">Chennai, Tamil Nadu</a></li>
+          <li><a href="404.html">Mon–Sat, 9AM–6PM</a></li>
         </ul>
       </div>
     </div>
@@ -237,7 +206,6 @@
     </div>
   </div>
 </footer>
-
 <script src="script.js"></script>
 </body>
 </html>
